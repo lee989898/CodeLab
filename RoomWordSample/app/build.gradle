@@ -30,6 +30,9 @@ android {
         exclude 'META-INF/atomicfu.kotlin_module'
     }
     kotlinOptions {
+        freeCompilerArgs += [
+                "-Xjvm-default=all",
+        ]
         jvmTarget = '1.8'
     }
 }
